@@ -13,6 +13,22 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::get('productos', function() {
+    return "esta es una ruta de productos desde el archivo api";
+
+});
+
+Route::delete('productos', function() {
+    return "esta es una ruta de productos desde el archivo api";
+    
+});
+
+Route::post('productos', function() {
+    return "esta es una ruta de productos desde el archivo api";
+    
+});
+
+Route::put('productos', function() {
+    return "esta es una ruta de productos desde el archivo api";
+    
 });
